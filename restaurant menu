@@ -1,0 +1,77 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Exam
+ */
+public class NewClass {
+    
+}
+public class MenuSelection {
+  public static void main(String[] args) {
+    ArrayList<String> dishes = new ArrayList<String>();
+    Scanner scanner = new Scanner(System.in);
+    String selection;
+    while (true) {
+      System.out.println("Please make a selection from the following menu:");
+      System.out.println("1. Pizza");
+      System.out.println("2. Pasta");
+      System.out.println("3. Salad");
+      System.out.println("4. Soup");
+      System.out.println("5. Burger");
+      System.out.println("6. Sandwich");
+      System.out.println("7. Fries");
+      System.out.println("8. Steak");
+      System.out.println("9. Seafood");
+      System.out.println("10. Sushi");
+      System.out.println("C. Continue");
+      System.out.println("E. End");
+      selection = scanner.nextLine();
+      switch (selection) {
+        case "1":
+          dishes.add("Pizza");
+          break;
+        case "2":
+          dishes.add("Pasta");
+          break;
+        case "3":
+          dishes.add("Salad");
+          break;
+        case "4":
+          dishes.add("Soup");
+          break;
+        case "5":
+          dishes.add("Burger");
+          break;
+        case "6":
+          dishes.add("Sandwich");
+          break;
+        case "7":
+          dishes.add("Fries");
+          break;
+        case "8":
+          dishes.add("Steak");
+          break;
+        case "9":
+          dishes.add("Seafood");
+          break;
+        case "10":
+          dishes.add("Sushi");
+          break;
+        case "C":
+          break;
+        case "E":
+          System.out.println("Your selection: " + dishes);
+          System.out.println("You will be served shortly, thank you!");
+          return;
+        default:
+          System.out.println("Invalid selection, please try again.");
+          break;
+      }
+    }
+  }
+}
