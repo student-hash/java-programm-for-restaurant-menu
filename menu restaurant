@@ -1,0 +1,49 @@
+public class
+}
+public class MenuSelection {
+  
+      selection = scanner.nextLine();
+      switch (selection) {
+        case "1":
+          dishes.add("Pizza");
+          break;
+        case "2":
+          dishes.add("Pasta");
+          break;
+        case "3":
+          dishes.add("Salad");
+          break;
+        case "4":
+          dishes.add("Soup");
+          break;
+        case "5":
+          dishes.add("Burger");
+          break;
+        case "6":
+          dishes.add("Sandwich");
+          break;
+        case "7":
+          dishes.add("Fries");
+          break;
+        case "8":
+          dishes.add("Steak");
+          break;
+        case "9":
+          dishes.add("Seafood");
+          break;
+        case "10":
+          dishes.add("Sushi");
+          break;
+        case "C":
+          break;
+        case "E":
+          System.out.println("Your selection: " + dishes);
+          System.out.println("You will be served shortly, thank you!");
+          return;
+        default:
+          System.out.println("Invalid selection, please try again.");
+          break;
+      }
+    }
+  }
+}
